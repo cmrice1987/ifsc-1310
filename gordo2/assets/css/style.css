@@ -25,7 +25,7 @@ header.primary nav ul{
 header.primary nav a:link,
 header.primary nav a:visted{
   color: #fff;
-  text-decoraation: none;
+  text-decoration: none;
   background: #000;
   background: rgba(0,0,0,0,4);
   display: block;
@@ -34,18 +34,28 @@ header.primary nav a:visted{
   transition: .6s;
 }
 
-headeer.primary nav a:hover{
+header.primary nav a:hover{
   background: rgba(0,0,0,8);
 }
 
-headeer.primary h1{
+header.primary{
+    background-color: #3b638b;
+    text-align: center;
+    color: #fff;
+    text-shadow:  2px 2px #000;
+    padding: 20px 40px;
+  
+}
+
+header.primary h1{
   text-align: center;
   color: #3AAAD8;
   padding: 40px,40px,60px,40px;
   text-shadow: 2px 2px #000;
+  margin: 0;
 }
 
-headeer.primary h1 a{
+header.primary h1 a{
   color: #ffffff;
   text-decoration: none;
 }
