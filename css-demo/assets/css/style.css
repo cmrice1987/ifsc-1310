@@ -8,33 +8,202 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+.container{
+    width: 80vw;
+    margin: 40px auto;
+    max-width: 900px;
+    
+}
+
+/* ---------------Global Styles----------------- */
 body{
-    font-family:'Raleway', sans-serif;
-    margin:0;
+  font-family: 'Amiko', sans-serif;
+  margin:0;
 }
 
 header.primary{
-    background-color: #3b638b;
-    text-align: center;
-    color: #fff;
-    text-shadow:  2px 2px #000;
-    /*longform*/
-    padding-top:  40px;
-    padding-right: 40px;
-    padding-bottom: 20px;
-    padding-left:  40px;
-/*shorthand t,r,b,l */
-padding: 40px 40px 60px 40px;
-    /*shorthand top/bottom, left/right*/
-    padding: 20px 40px;
-    
-    
+background-image:
+radial-gradient(closest-side, transparent 0%, transparent 75%, #0C61F8 76%, #0C61F8 85%, #0CF890 86%, #0CF890 94%, #A7A9AC 95%, #A7A9AC 103%, #0B8BD9 104%, #0B8BD9 112%, #0BD9B8 113%, #0BD9B8 121%, #A7A9AC 122%, #A7A9AC 130%, #00D4F0 131%, #00D4F0 140%),
+radial-gradient(closest-side, transparent 0%, transparent 75%, #0C61F8 76%, #0C61F8 85%, #0CF890 86%, #0CF890 94%, #A7A9AC 95%, #A7A9AC 103%, #0B8BD9 104%, #0B8BD9 112%, #0BD9B8 113%, #0BD9B8 121%, #A7A9AC 122%, #A7A9AC 130%, #00D4F0 131%, #00D4F0 140%);
+background-size: 110px 110px;
+background-color: #0CF890;
+background-position: 0 0, 55px 55px;
+  text-align:center;
+  color:#ffffff;
+  text-shadow: 2px 2px #000;
+  /* Longform */
+  padding-top:40px;
+  padding-right:40px;
+  padding-bottom:20px;
+  padding-left:40px;
+  
+  /* Shorthand Top/Bottom, Left/Right */
+  padding: 20px 40px;
+  
+  /* Shorthand  T,R,B,L */
+  padding: 40px 40px 20px 40px;
+
 }
-    header.primary h1{
-        font-size:3.2rem;
-        margin: 20px 0;
-    }
-    header.primary h1 a{
-        text-decoraation:none;
-        color: #ffffff;
-    }
+
+header.primary h1{
+  font-family: Shrikhand, cursive;
+  font-size:3.2rem;
+  margin: 20px 0;
+  letter-spacing: 2px;
+  text-shadow: 5px 5px #000000;
+}
+
+header.primary h1 a{
+  text-decoration:none;
+  color:#00D4F0;
+}
+
+header.primary h2{
+  font-family: 'Suez One', serif;
+  font-size:2rem;
+  margin:20px auto 40px;
+  color:#00D4F0;
+  text-shadow: 4px 4px 3px  #000000;
+}
+
+header.primary nav{
+  font-family: 'Shrikhand', cursive;
+  width:80vw;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+header.primary nav ul{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  padding:0;
+}
+
+header.primary nav ul li{
+  list-style-type:none;
+  padding:10px;
+}
+
+header.primary nav ul li a:link, header.primary nav ul li a:visited{
+  color:#ffffff;
+  text-decoration:none;
+  background-color:#000000;
+  background-color:rgba(0,0,0,.4);
+  padding: 8px 16px;
+  border-radius:20px;
+  transition:.5s;
+}
+
+
+header.primary nav ul li a:hover, header.primary nav ul li a:active{
+  background-color:rgba(0,0,0,.8);
+}
+
+
+
+
+
+
+
+
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  border-bottom: 5px groove #00D4F0;
+  padding-bottom: 2.5em;
+}
+
+#content article.post{
+  width:23vw;
+  box-shadow: 0 4px 5px rgba(0,0,0,.4);
+  padding:10px;
+  transition:.6s;
+  color:#00D4F0;
+}
+
+#content article.post:hover{
+  box-shadow: 0 8px 16px rgba(0,0,0,.4);
+}
+
+#content article.post figure{
+  margin:10px 0;
+}
+
+#content article.post a{
+color: #0B8BD9;
+}
+
+#content article.post a:hover{
+text-decoration:none;
+}
+
+#content article.post p{
+  font-size:.8em;
+  color: #ffff;
+}
+
+#content article.post footer{
+  font-size:.8em;
+  color: #fff;
+
+
+
+
+
+
+
+
+
+colophon{
+  background-image:
+  radial-gradient(closest-side, transparent 0%, transparent 75%, #0C61F8 76%, #0C61F8 85%, #0CF890 86%, #0CF890 94%, #A7A9AC 95%, #A7A9AC 103%, #0B8BD9 104%, #0B8BD9 112%, #0BD9B8 113%, #0BD9B8 121%, #A7A9AC 122%, #A7A9AC 130%, #00D4F0 131%, #00D4F0 140%),
+  radial-gradient(closest-side, transparent 0%, transparent 75%, #0C61F8 76%, #0C61F8 85%, #0CF890 86%, #0CF890 94%, #A7A9AC 95%, #A7A9AC 103%, #0B8BD9 104%, #0B8BD9 112%, #0BD9B8 113%, #0BD9B8 121%, #A7A9AC 122%, #A7A9AC 130%, #00D4F0 131%, #00D4F0 140%);
+  background-size: 110px 110px;
+  background-color: #0CF890;
+  background-position: 0 0, 55px 55px;
+
+}
+
+
+
+#colophon h6{
+  padding:20px;
+  margin:0;
+  text-align:center;
+  color:#fff;
+  font-size:.8em;
+  text-transform:uppercase;
+}
+
+
+
+
+@media screen and (max-width:690px){
+  
+  header.primary nav ul {
+    flex-direction:column;
+    max-width:400px;
+    margin:0 auto;
+  }
+  
+  
+  header.primary nav a{
+    display:block;
+  }
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
