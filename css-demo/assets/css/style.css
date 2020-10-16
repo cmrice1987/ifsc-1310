@@ -1,3 +1,6 @@
+/*-------CSS Demo-------*/
+
+
 /* ---------------Box Sizing----------------- */
 
 html {
@@ -9,12 +12,22 @@ html {
   box-sizing: inherit;
 }
 
+/*----------- Utility Styles-------*/
+
 .container{
     width: 80vw;
     margin: 40px auto;
     max-width: 900px;
     
 }
+/*---------- responsive images---------*/
+img{ 
+  max-width:100%;
+  height: auto;
+}
+
+
+
 
 /* ---------------Global Styles----------------- */
 body{
@@ -49,6 +62,7 @@ background-position: 0 0, 55px 55px;
 header.primary h1{
   font-family: Shrikhand, cursive;
   font-size:3.2rem;
+  font-weight: 900;
   margin: 20px 0;
   letter-spacing: 2px;
   text-shadow: 5px 5px #000000;
@@ -66,6 +80,7 @@ header.primary h2{
   color:#00D4F0;
   text-shadow: 4px 4px 3px  #000000;
 }
+
 
 header.primary nav{
   font-family: 'Shrikhand', cursive;
@@ -101,7 +116,25 @@ header.primary nav ul li a:hover, header.primary nav ul li a:active{
   background-color:rgba(0,0,0,.8);
 }
 
+#intro{
+  border-bottom: 1px solid #c0c0c0;
+  padding-bottom: 1.5em;
+  
+}
 
+#intro p{
+  line-height: 1.5em;
+}
+
+#intro h2{
+  color: #0BD9B8;
+  text-transform: uppercase;
+}
+
+#container h2{
+  color:#0BD9B8;
+  font-weight: bold;
+}
 
 
 
@@ -142,22 +175,40 @@ text-decoration:none;
 
 #content article.post p{
   font-size:.8em;
-  color: #ffff;
+  color: #0000;
 }
 
 #content article.post footer{
   font-size:.8em;
   color: #fff;
+}
+
+aside {
+  background-color:#ad950a;
+  color:#fff;
+  padding:40px;
+}
+
+aside h2{
+  color:#0BD9B8;
+}
+
+aside .container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+aside article{
+  width:40vw;
+}
 
 
 
 
 
 
-
-
-
-colophon{
+#colophon h6{
   background-image:
   radial-gradient(closest-side, transparent 0%, transparent 75%, #0C61F8 76%, #0C61F8 85%, #0CF890 86%, #0CF890 94%, #A7A9AC 95%, #A7A9AC 103%, #0B8BD9 104%, #0B8BD9 112%, #0BD9B8 113%, #0BD9B8 121%, #A7A9AC 122%, #A7A9AC 130%, #00D4F0 131%, #00D4F0 140%),
   radial-gradient(closest-side, transparent 0%, transparent 75%, #0C61F8 76%, #0C61F8 85%, #0CF890 86%, #0CF890 94%, #A7A9AC 95%, #A7A9AC 103%, #0B8BD9 104%, #0B8BD9 112%, #0BD9B8 113%, #0BD9B8 121%, #A7A9AC 122%, #A7A9AC 130%, #00D4F0 131%, #00D4F0 140%);
@@ -176,6 +227,7 @@ colophon{
   color:#fff;
   font-size:.8em;
   text-transform:uppercase;
+  font-weight: bold;
 }
 
 
