@@ -2,6 +2,8 @@
 
 /* ---------------Box Sizing----------------- */
 
+
+
 html {
   box-sizing: border-box;
 }
@@ -19,7 +21,6 @@ html {
     max-width: 900px;
     
 }
-
 /*---------- responsive images---------*/
 img{ 
   max-width:100%;
@@ -27,44 +28,18 @@ img{
 }
 
 
-header nav{
-  width: 80vw;
-  margin: 20px auto;
-  max-width: 900px;
-}
-
-header nav ul{
-  display:flex;
-  flex-direction:row;
-  justify-content: space-around;
-  padding:0;
-}
-
-header nav ul li{
-  list-style-type:none;
-  padding:10px;
-}
 
 
-
-header nav ul li a:link,
-header nav ul li a:visted{
-  color:#ffffff;
-  text-decoration:none;
-  background-color:#000000;
-  background-color:rgba(0,0,0,.4);
-  padding: 8px 16px;
-  border-radius:20px;
-  transition:.5s;
-}
-
-header nav ul li a:hover, a:active{
-  background: rgba(0,0,0,8);
+/* ---------------Global Styles----------------- */
+body{
+  font-family: 'Amiko', sans-serif;
+  margin:0;
 }
 
 header{
-    background-color: #3b638b;
-    text-align:center;
+background-color: #3B638B;
+background-position: 0 0, 55px 55px;
+  text-align:center;
   color:#ffffff;
   text-shadow: 2px 2px #000;
   /* Longform */
@@ -82,178 +57,233 @@ header{
 }
 
 header h1{
-  text-align: center;
   color: #3AAAD8;
-  font-size: 3.2rem;
+  font-family: Shrikhand, cursive;
+  font-size:3.2rem;
   font-weight: 900;
-  text-shadow: 2px 2px #000;
   margin: 20px 0;
+  letter-spacing: 2px;
+  text-shadow: 5px 5px #000000;
 }
 
 header h1 a{
-  color: #ffffff;
-  text-decoration: none;
+  text-decoration:none;
+  color:#ffffff;
+}
+
+#into h2{
+  font-family: 'Rancho', cursive;
+  font-size:2rem;
+  margin:20px auto 40px;
+  color:#00D4F0;
+  text-shadow: 4px 4px 3px  #000000;
 }
 
 
-
-
-#into p{
-  line-height:1.5em;
-  color: #fff;
+header nav{
+  font-family: 'Shrikhand', cursive;
+  width:80vw;
+  margin: 20px auto;
+  max-width: 900px;
 }
 
- #intro h2{
-   font-family: 'Rancho',cursive;
- }
+header nav ul{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  padding:0;
+}
 
-ul {
+header nav ul li{
+  list-style-type:none;
+  padding:10px;
+}
+
+header nav ul li a:link, header nav ul li a:visited{
+  color:#ffffff;
+  text-decoration:none;
+  background-color: #00000;
+  background-color:rgba(0,0,0,.4);
+  padding: 8px 16px;
+  border-radius:20px;
+  transition:.5s;
+}
+
+
+header nav ul li a:hover, header nav ul li a:active{
+  background-color:rgba(0,0,0,.8);
+}
+
+#intro{
+  border-bottom: 1px solid #c0c0c0;
+  padding-bottom: 1.5em;
+  
+}
+
+#intro p{
+  line-height: 1.5em;
+}
+
+#intro h2{
+  color: #0BD9B8;
+  text-transform: uppercase;
+}
+
+#container h2{
+  color:#0BD9B8;
+  font-weight: bold;
+}
+
+#stats ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+
 }
 
-li {
+#stats li{
   float: left;
 }
 
-li a {
+#stats li a{
   display: block;
-  color: white;
+  color: #ffff;
   text-align: center;
-  padding: 14px 16px;
+  padding:  14px 16px;
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
+#stats li a:hover{
   background-color: #111;
 }
 
-/* Responsive Images---- should be at the top of all css*/
-img{
-  margin: auto;
-  width:auto;
-  height:auto;
-}
-
-  .center {
+.center{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: auto;
+
 }
-
-
-
-
-/*-------------------Global Styles--------------------------------------*/
-
-
-
-#intro p{
-  line-height:1.5em;
-  color:#fff;
-  
-}
-
-#content{
-  display:flex;
-  flex-direction:row;
-  justify-content: space-between;
-  border-bottom: 5px groove #AE1A13;
-  padding-bottom: 2.5em;
-}
-
 
 #intro h5{
   text-align: center;
-  font-size: 16px;
+  font-size:  16px;
 }
-  .header h3{
-    margin-block-start: 20px;
-    margin-block-end: 20px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding: 40px 40px 60px 40px;
-    text-align: center;
-  }
 
+h3{
+  margin-block-start: 20px;
+  margin-block-end:  20px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding: 40px 40px 60px 40px;
+  text-align: center;
+}
 
 table.center{
-  margin-left:auto;
-  margin-right:auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 table{
   margin: 60px;
-  width:100%;
-  border:3px solid #000;
+  width: 100%;
+  border: 3px solid #000;
   border-collapse: collapse;
-  color:#000;
-
 }
+
 table caption{
-  padding:20px;
-  font-weight:bold;
+  padding: 20px;
+  font-weight: bold;
   font-size: 1.5em;
-  color:#fff;
+  color: #fff; 
 }
 tr{
-  background:#fff;
+  background: #fff;
+  
 }
-
 tr:hover{
-  background:white;
+  background: #fff;
 }
 th{
-  background:#ccc2bb;
-  color:#000;
-  padding:10px;
+  background: #CCC2BB;
+  color: #000;
+  padding: 10px;
 }
-td{ 
-  border:3px solid #000;
-  padding:10px;
-  }
-
-
-
-@media screen and (max-width:690px){
-  header nav ul{
-    flex-direction:column;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  header nav a{
-    display:block;
-  }
-  
-  
+td{
+  border: 3px solid #000;
+  padding: 10px;
 }
 
 aside.column left{
-    float:left;
-    width: 40%;
-    padding-left: .5rem;
-    margin-left: .5rem;
-    box-shadow: 5px 0 5px -5px ;
+  float: left;
+  width: 40%;
+  padding-left: .5rem;
+  margin-left: .5rem;
+  box-shadow: 5px 0 5px 5px;
 }
 
 aside.column right{
-    float:right;
-    width: 40%;
-    padding-left: .5rem;
-    margin-left: .5rem;
-    box-shadow: 5px 0 5px -5px ;
+  float: right;
+  width: 40%;
+  padding-left: .5rem;
+  margin-left: .5rem;
+  box-shadow: 5px 0 5px -5px;
 }
-/* Create two equal columns that sits next to each other */
-.column {
-  float:right;
+.column{
+  float: right;
   flex: 50%;
   width: 50%;
   padding: 10px;
 }
 
+references column{
+  float: left;
+  flex: 50%;
+  width: 50%;
+  padding: 10px;
+}
+
+#colophon h6{
+  background-size: 110px 110px;
+  background-color: #3B638B;
+  background-position: 0 0, 55px 55px;
+
+}
+
+references ol{
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+references li{
+  float: left;
+  
+}
+
+#colophon h6{
+  padding:20px;
+  margin:0;
+  text-align:center;
+  color:#fff;
+  font-size:.8em;
+  text-transform:uppercase;
+  font-weight: bold;
+}
 
 
+
+
+@media screen and (max-width:690px){
+  
+  header.primary nav ul {
+    flex-direction:column;
+    max-width:400px;
+    margin:0 auto;
+  }
+  
+  
+  header.primary nav a{
+    display:block;
+  }
+  
+  
