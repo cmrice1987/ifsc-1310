@@ -21,6 +21,34 @@ html {
     
 }
 /*---------- responsive images---------*/
+
+.img-right{
+  float:right;
+  padding:5px;
+  border:1px solid #c0c0c0;
+  margin: 10px 0 10px 20px;
+}
+
+.img-left{
+  float:left;
+  padding:5px;
+  border:1px solid #c0c0c0;
+  margin: 10px 20px 10px 0;
+}
+
+.img-center{
+  display:block;
+  padding:5px;
+  border:1px solid #c0c0c0;
+  margin: 20px auto;
+}
+
+
+
+
+
+
+
 img{ 
   max-width:100%;
   height: auto;
@@ -33,6 +61,7 @@ img{
 body{
   font-family: 'Amiko', sans-serif;
   margin:0;
+  color: #F7FFFE;
 }
 
 header.primary{
@@ -154,7 +183,7 @@ header.primary nav ul li a:hover, header.primary nav ul li a:active{
   box-shadow: 0 4px 5px rgba(0,0,0,.4);
   padding:10px;
   transition:.6s;
-  color:#00D4F0;
+  color:#F7FFFE;
 }
 
 #content article.post:hover{
@@ -175,18 +204,30 @@ text-decoration:none;
 
 #content article.post p{
   font-size:.8em;
-  color: #0000;
+  color: #fffff;
 }
 
-#content article.post footer{
+#content article time, #content article figcaption, article.post footer{
   font-size:.8em;
   color: #fff;
+  text-transform: uppercase;
 }
 
-aside {
+#content article img{
+  border-radius: 4px;
+}
+
+.post a:link, .post a:visited{
+  color:;
+}
+
+
+
+
+aside[role="complementary"] {
   background-color:#ad950a;
   color:#fff;
-  padding:40px;
+  padding: 2.5rem;
 }
 
 aside h2{
@@ -199,16 +240,33 @@ aside .container{
   justify-content:space-between;
 }
 
-aside article{
-  width:40vw;
+aside article.widget{
+  width:40%;
+}
+
+aside a:link,aside a:vistied{
+  color:#fff;
+  display: block;
+  margin-top:20px;
+  letter-spacing: 1.5px;
+}
+
+aside a:hover, aside a:active{
+  text-decoration: none;
+}
+
+aside a:hover, aside a:active{
+  text-decoration:none;
+}
+
+aside article footer{
+  display: none;
 }
 
 
 
 
-
-
-#colophon h6{
+footer#colophon{
   background-image:
   radial-gradient(closest-side, transparent 0%, transparent 75%, #0C61F8 76%, #0C61F8 85%, #0CF890 86%, #0CF890 94%, #A7A9AC 95%, #A7A9AC 103%, #0B8BD9 104%, #0B8BD9 112%, #0BD9B8 113%, #0BD9B8 121%, #A7A9AC 122%, #A7A9AC 130%, #00D4F0 131%, #00D4F0 140%),
   radial-gradient(closest-side, transparent 0%, transparent 75%, #0C61F8 76%, #0C61F8 85%, #0CF890 86%, #0CF890 94%, #A7A9AC 95%, #A7A9AC 103%, #0B8BD9 104%, #0B8BD9 112%, #0BD9B8 113%, #0BD9B8 121%, #A7A9AC 122%, #A7A9AC 130%, #00D4F0 131%, #00D4F0 140%);
@@ -229,6 +287,117 @@ aside article{
   text-transform:uppercase;
   font-weight: bold;
 }
+
+#additional-elements h2{
+  color:#blue;
+  border-bottom: 3px double #green;
+}
+
+#additional-elements a:link, #additional-element a:visited{
+  color: #purple;
+}
+
+#additional-element a:visted, #additional-elements a:visited{
+  text-decoration:none;
+}
+
+#additional-elements h3{
+  border-left: 5px soliid #yellow;
+  padding: 10px 10px;
+}
+
+table{
+  width:100%;
+  border:1px solid #c0c0c0;
+  border-collapse:collapse;
+}
+
+table caption{
+  color:#3b638b;
+  padding:10px;
+  font-weight:bold;
+  font-size:1.4rem;
+}
+
+table tr:nth-child(even){
+  background: rgba(0,0,0,.1)
+}
+
+table tr:hover{
+  background: rgba(0,0,0,.2)
+}
+
+table th{
+  background-color:#172635;
+  color:#ffffff;
+  width:33%;
+  padding:10px;
+}
+
+table td {
+  border:1px solid #c0c0c0;
+  padding:5px;
+}
+
+#additional-elements ol{
+  list-style-type:upper-roman;
+}
+
+#additional-elements li{
+
+}
+
+#additional-elements ul ul{
+  list-style-type:square;
+}
+
+#additional-elements dl{
+  line-height:1.5
+}
+
+#additional-elements dt{
+  font-weight:bold;
+  font-size:1.2rem;
+}
+
+#additional-elements dd{
+  margin:0;
+}
+
+dd + dt{
+  margin-top:1.4rem;
+}
+
+#additional-elements blockquote{
+  background:rgba(0,0,0,.15);
+  padding: 40px 60px;
+  border:5px double grey;
+  border-radius:16px;
+  font-size:1.2em;
+}
+
+#additional-elements cite{
+  display:block;
+  font-size:.6em;
+  text-align:right;
+  margin-top:1.5rem;
+  font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
