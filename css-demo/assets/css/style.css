@@ -181,7 +181,7 @@ header.primary nav ul li a:hover, header.primary nav ul li a:active{
 #content article.post{
   width:23vw;
   box-shadow: 0 4px 5px rgba(0,0,0,.4);
-  padding:10px;
+  padding:20px;
   transition:.6s;
   color:#F7FFFE;
 }
