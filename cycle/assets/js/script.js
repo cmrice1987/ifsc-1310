@@ -1,7 +1,9 @@
 $(document).ready(function() {
 $('.gallery').cycle({
-		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-	});
+	fx:    'scrollDown', 
+    sync:   0, 
+    delay: -2000 
+});
 // Your code goes here...
 
 });

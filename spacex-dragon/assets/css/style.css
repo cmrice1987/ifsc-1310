@@ -48,7 +48,7 @@ header.primary nav{
   color: white;
   text-align: left;
   text-decoration: none;
-  text-size: 2.5em;
+  font-weight: 2.5em;
   text-shadow: 2px 2px #000;
   font-weight:900;
 }
@@ -61,7 +61,7 @@ header.primary nav{
   /* The image Sused */
   background-image: url("../img/sunrise.jpg");
   /* Full height */
-  height: 100%;
+  height: auto;
   position: relative;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -70,6 +70,8 @@ header.primary nav{
   background-size: cover;
   color: white;
   padding: 60px;
+  background-color: black;
+  margin: 0;
 }
 
 /*#body img{
@@ -252,7 +254,23 @@ dd + dt {
   margin-top:20px;
 }
 
-
+.gallery body {
+	background-color: #000;
+}
+.gallery {
+	background-color: #CCC;
+	width: 730px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #999;
+	height: 516px;
+	overflow: hidden; /*Avoids showing all of the images momentarily while JS loads */
+	border-radius: 4px;
+}
+.gallery img {
+	margin: 15px;
+}
 
 
 
