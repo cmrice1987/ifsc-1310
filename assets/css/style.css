@@ -109,7 +109,6 @@ header.primary nav a:hover {
   display:flex;
   flex-direction:row;
   justify-content: space-between;
-   border-bottom: 5px groove rgb(243, 153, 57);
   padding-bottom: 2.5em;
 }
 
@@ -201,15 +200,14 @@ background-color: #fff;
 }
 
 
-#content{
+.portfolio-container{
   display:flex;
   flex-direction:row;
   justify-content: space-between;
-  border-bottom: 3px solid #04B2D9;
   padding-bottom: 2.5em;
 }
 
-#content article.post{
+#intro article.all-post{
   width:23vw;
   box-shadow: 0 4px 5px #F2F2F2;
   padding:10px;
@@ -217,29 +215,26 @@ background-color: #fff;
   background-color:#F2F2F2;
   color: #548DBF;
   margin-top: 50px;
+  columns: 100px 2;
 }
 
-#content article.post:hover{
+#intro article.post:hover{
   box-shadow: 0 8px 16px rgba(0,0,0,.4);
 }
 
-#content article.post a{
+#intro article.post a{
 color:  rgb(243, 153, 57);
 }
 
-#content article.post a:hover, a:visited, a:active, a:link {
+#intro article.post a:hover, a:visited, a:active, a:link {
 text-decoration:none;
 color:#FFC587;
 }
 
-#content article.post p{
-  font-size:.8em;
+#intro article.post p{
+  font-size: .9em;
   color:  rgb(243, 153, 57);
-}
 
-.gallery{
-	margin: 0px;
-	padding: 0px;
 }
 
 .gallery {
@@ -255,6 +250,7 @@ color:#FFC587;
 	margin: 15px;
   max-width:50%;
 }
+
 
 
 
