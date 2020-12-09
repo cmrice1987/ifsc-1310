@@ -219,7 +219,7 @@ background-color: #fff;
   background-color:#F2F2F2;
   color: #7EB0F2;
   margin: 30px;
- }*/
+ }
 
 #intro article.post:hover{
   box-shadow: 0 8px 16px rgba(0,0,0,.4);
@@ -257,6 +257,9 @@ color:#FFC587;
 	margin: 15px;
   max-width:50%;
 }
+.portfolio-gallery{
+	margin: 0px;
+	padding: 0px;
 
 }
 .portfolio-gallery {
@@ -265,13 +268,15 @@ color:#FFC587;
 	margin-top: 40px;
 	margin-right: auto;
 	margin-left: auto;
-	border: 1px solid #999;
+	border: 5px solid #999;
 	height: 516px;
 	overflow: hidden; /*Avoids showing all of the images momentarily while JS loads */
 	border-radius: 4px;
+	
 }
 .portfolio-gallery img {
 	margin: 15px;
+	float: right;
 }
 
 
